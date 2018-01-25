@@ -27,4 +27,9 @@ public class DevSettingsActivity extends PreferenceActivity {
     setTitle(R.string.catalyst_settings_title);
     addPreferencesFromResource(R.xml.preferences);
   }
+
+  @Override
+  protected boolean isValidFragment(String fragmentName) {
+    return false;
+  }
 }
